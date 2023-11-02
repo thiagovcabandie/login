@@ -23,7 +23,7 @@ body {
     border: 1px solid rgba(91, 41, 224, 1);
     backdrop-filter: blur(15px);
     color: rgb(246, 206, 74);
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 30px 30px ;
 }
 
@@ -46,7 +46,7 @@ body {
     border: none;
     outline: none;
     border: 1px solid rgba(91, 41, 224, 1);
-    border-radius: 8px;
+    border-radius: 7px;
     font-size: 15px;
     color: white;
     padding: 20px 45px 20px 20px;

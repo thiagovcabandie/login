@@ -1,6 +1,7 @@
 * {
     font-family: 'Martian Mono', monospace;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Serif', serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://wallpapercave.com/wp/wp10871610.jpg);
+    background-color: rgb(15, 12, 19);
     background-position: center;
     background-size: cover;
 }
@@ -19,15 +20,15 @@ body {
 .all-box {
     width: 420px;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(91, 41, 224, 1);
     backdrop-filter: blur(15px);
-    color: white;
+    color: rgb(246, 206, 74);
     border-radius: 10px;
     padding: 30px 30px ;
 }
 
 .all-box h1 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -44,7 +45,7 @@ body {
     background:transparent;
     border: none;
     outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 1px solid rgba(91, 41, 224, 1);
     border-radius: 40px;
     font-size: 15px;
     color: white;
@@ -52,7 +53,7 @@ body {
 }
 
 .input-box input::placeholder {
- color: white;
+ color: rgba(255, 255, 255, .5);
  font-weight: 200;
 }
 
@@ -71,7 +72,7 @@ body {
 }
 
 .remember-forgot label {
-    accent-color: white ;
+    accent-color: rgb(255, 255, 255) ;
     margin-right: 3px;
 }
 
@@ -87,15 +88,20 @@ body {
 .button {
     width: 100%;
     height: 45px;
-    background: white;
-    border: none;
+    background: transparent;
+    border: 1px solid rgba(91, 41, 224, 1);
     outline: none;
-    border-radius: 40px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 400;
+}
+
+.button:hover {
+    background: rgba(91, 41, 224, 1);
+    transition: background .5s;
 }
 
 .register-link {
@@ -107,7 +113,6 @@ body {
 .register-link a {
     color: white;
     text-decoration: none;
-    font-weight: 900;
 }
 
 .register-link a:hover {

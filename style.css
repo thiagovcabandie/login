@@ -46,7 +46,7 @@ body {
     border: none;
     outline: none;
     border: 1px solid rgba(91, 41, 224, 1);
-    border-radius: 40px;
+    border-radius: 10px;
     font-size: 15px;
     color: white;
     padding: 20px 45px 20px 20px;
@@ -55,6 +55,7 @@ body {
 .input-box input::placeholder {
  color: rgba(255, 255, 255, .5);
  font-weight: 200;
+ font-style: italic;
 }
 
 .input-box i {
@@ -71,10 +72,31 @@ body {
     margin: -15px 0px 15px;
 }
 
-.remember-forgot label {
-    accent-color: rgb(255, 255, 255) ;
+.remember-forgot input {
+    appearance: none;
+}
+
+.remember-forgot input + label::before {
+    content: "\2713";
+    color: transparent;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 15px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(246, 206, 74);
     margin-right: 3px;
 }
+
+.remember-forgot input:checked + label::before {
+    color: rgb(246, 206, 74);
+}
+
+.remember-forgot label {
+    margin-right: 109px;
+}
+
 
 .remember-forgot a {
     color: white;
@@ -91,7 +113,7 @@ body {
     background: transparent;
     border: 1px solid rgba(91, 41, 224, 1);
     outline: none;
-    border-radius: 9px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-size: 16px;

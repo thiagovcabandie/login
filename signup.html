@@ -11,39 +11,38 @@
     href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet" />
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Login</title>
+  <title>Register</title>
 </head>
 
 <body>
   <div class="all-box">
     <form action="">
-      <h1>Login</h1>
+      <h1>Register</h1>
 
       <div class="input-box">
-        <input type="text" name="Username-or-email" id="Text" placeholder="Username or email" required />
+        <input type="text" name="Password" id="Text" placeholder="Username" required />
         <i class='bx bxs-user-circle'></i>
+      </div>
+      
+      
+      <div class="input-box">
+        <input type="email" name="Email" id="Email" placeholder="Email" required />
+        <i class='bx bxs-envelope' ></i>
       </div>
 
       <div class="input-box">
         <input type="password" name="Password" id="Pass" placeholder="Password" required />
-        <i class="bx bxs-lock-alt"></i>
+        <i class='bx bxs-lock-alt' ></i>
       </div>
 
-      <div class="remember-forgot">
-        <label for="">
-          <input type="checkbox"/> Remember me</label>
-        <a href="">Forgot password?</a>
-      </div>
-
-      <button type="submit" class="button">Log in</button>
+      <button type="submit" class="button">Sign up</button>
 
       <div class="register-link">
         <p>
-          Don't have an account?
-          <a href="signup.html">Register</a>
+          Already have an account?
+          <a href="index.html">Login</a>
         </p>
       </div>
-
     </form>
   </div>
 </body>

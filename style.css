@@ -86,7 +86,7 @@ body {
     width: 15px;
     height: 15px;
     border: 1px solid rgb(246, 206, 74);
-    margin-right: 3px;
+    margin-right: 4px;
 }
 
 .remember-forgot input:checked + label::before {
@@ -94,7 +94,7 @@ body {
 }
 
 .remember-forgot label {
-    margin-right: 109px;
+    margin-right: 108px;
 }
 
 
